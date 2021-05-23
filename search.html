@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>
+        Search
+    </title>
+
+    <link rel ="icon" href="search.png" type="image/x-icon">
+
+    <link rel ="stylesheet" type="text/css" href="css/style2.css">
+
+</head>
+
+<header>
+    <div class="logo">
+
+        <img src="logow.png">
+
+    </div>
+
+</header>
+
+<body>
+
+    <div class="main">
+    <form method="POST">
+        <div class="search">
+            <input type="text" placeholder="Search By Countory Name.." name ="box">
+        </div>                
+        <div class="submit">
+            <input type = "submit" name="SEARCH">
+        </div>
+    </form>
+    </div>
+
+<?php
+
+// include the dbconnect() function
+include_once("dbconn.php");
+
+if (isset($_POST["box"]))
+{
+    $str = $_POST["SEARCH"];
+
+    $queary = "SELECT Country_Code,Short_Name,Region FROM ECONTABLE WHERE $";
+
+
+
+
+
+?>
+
+</body>
+
+</html>
+
+
+
